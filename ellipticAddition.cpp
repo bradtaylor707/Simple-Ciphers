@@ -11,7 +11,7 @@ int main ()
 {
 
   bool dooo = true;
-  int again;
+  string again;
   int b; int c;
   cout << "enter y^2 = x^3 + b*x + c   b and c: ";
   cin >> b >> c;
@@ -47,8 +47,8 @@ int main ()
       cout << "\nAgain? with P1 = new P3  (0 for no): ";
       cin >> again; 
 
-      if (!again)
-	dooo = false;
+      if (again[0] == 'n' || again[0] == 'N') {
+	dooo = false; cout << endl; }
 
       if (dooo) {
 	p1x = x3;
